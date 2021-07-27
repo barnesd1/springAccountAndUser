@@ -2,13 +2,11 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 //import java.util.Optional;
 
 import com.example.demo.persistence.domain.Account;
 import com.example.demo.persistence.repo.AccountRepo;
-@Service
+
 public class AccountService {
     public AccountRepo repo;
     public AccountService(AccountRepo repo) {

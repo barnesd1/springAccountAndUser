@@ -2,11 +2,9 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.example.demo.persistence.domain.User;
 import com.example.demo.persistence.repo.UserRepo;
-@Service
+
 public class UserService {
     public UserRepo repo;
     public UserService(UserRepo repo) {

@@ -59,7 +59,6 @@ INDEX VERSION 1.131+C:\Users\david\Documents\workspace-spring\.metadata\.plugins
 386134763.index
 4135061212.index
 3839440938.index
-3435648363.index
 2879446103.index
 3854696035.index
 2954635601.index

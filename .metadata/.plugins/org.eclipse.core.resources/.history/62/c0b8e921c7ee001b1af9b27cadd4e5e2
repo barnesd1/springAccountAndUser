@@ -19,7 +19,7 @@ import com.example.demo.service.AccountService;
 @RestController
 public class AccountController {
 	@Autowired
-	private AccountService service;
+	 private AccountService service;
 	
 	public AccountController() {
 		super();
