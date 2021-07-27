@@ -1,0 +1,11 @@
+package com.example.demo.service;
+
+import com.example.demo.persistence.repo.AccountRepo;
+
+public class UserService {
+    public UserRepo repo;
+    public UserService(UserRepo repo) {
+    	super();
+    	this.repo = repo;
+    }
+}

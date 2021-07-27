@@ -1,0 +1,22 @@
+package com.example.demo.controller;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.persistence.domain.User;
+
+@RestController
+public class UserController {
+	@RequestMapping("/getAll")
+	public List<User> getAllUsers() {
+		List<User> l = new ArrayList<User>();
+		User u = new User("user001", "p5ss", "Bob", "Martin", LocalDate.of(2000, Month.JANUARY, 8));
+		l.add(u);
+		return l;
+    }
+}

@@ -1,0 +1,17 @@
+package com.example.demo.service;
+
+import java.util.Optional;
+
+import com.example.demo.persistence.domain.Account;
+
+public class AccountService {
+
+	public Account create(Account acc) {
+		return this.repo.saveAndFlush(acc);
+	}
+	
+	public Account update(Account acc) {
+		Optional<Account> exists = this.repo.findById(id);
+		System.out.println(exists);
+	}
+}
