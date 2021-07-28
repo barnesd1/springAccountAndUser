@@ -41,5 +41,5 @@ public class AccountService {
 	public List<Account> findByName(String name) {
 		return this.repo.findByName(name);
 	}
-
+}
 }

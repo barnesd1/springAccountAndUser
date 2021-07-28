@@ -45,9 +45,4 @@ public class AccountController {
     public ResponseEntity<Boolean> delete(@PathVariable("id") Long id) {
     	return new ResponseEntity<Boolean>(this.service.deleteAccount(id), HttpStatus.NO_CONTENT);
     }
-    
-    @GetMapping("/account/findByName/{name}")
-    public ResponseEntity<List<Account>> findByName(@PathVariable("name") String name) {
-    	return new ResponseEntity<List<Account>>(this.service.findByName(name), HttpStatus.OK);
-    }
 }

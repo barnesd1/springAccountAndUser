@@ -36,10 +36,4 @@ public class AccountService {
 		this.repo.deleteById(id);
 	    return this.repo.existsById(id);
 	}
-	
-	
-	public List<Account> findByName(String name) {
-		return this.repo.findByName(name);
-	}
-
 }
